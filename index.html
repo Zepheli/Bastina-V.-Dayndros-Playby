@@ -8,9 +8,9 @@
 <body style="background-color:#000000; background-repeat: no-repeat; background-size: cover !important; margin:0;">
 
 <div id="dpic1" style="width:50%;">
-<img id="pic2" align=left src=https://cdn.discordapp.com/attachments/973976880904560670/981472995488968714/unknown_preview_rev_1_7.png width=auto height=100% style="transition: 5s">
+<img id="pic2" align=left src=https://cdn.discordapp.com/attachments/973976880904560670/981472995488968714/unknown_preview_rev_1_7.png width=auto height=100% style="transition: 3s">
 
-<img id="pic" align=left src=https://media.discordapp.net/attachments/973976880904560670/981490936175525928/unknown.png? width=97% height=auto style="margin-left:-200px;transition: 5s;">
+<img id="pic" align=left src=https://media.discordapp.net/attachments/973976880904560670/981490936175525928/unknown.png? width=97% height=auto style="margin-left:-200px;transition: 3s;">
 </div>
 
 
@@ -27,7 +27,7 @@
 <br>
 <br>
 <br>
-<div style="width:50%; float: right;">
+<div  style="width:50%; float: right;">
 <center>
 <p id="text" style="margin-bottom:100%;transition: 5s;"></p>
 
@@ -58,7 +58,7 @@
 
 
 <script>
-$("#dpic1").hover(function(){
+/*$("#dpic1").hover(function(){
 $('#pic').hide();
   $('#pic2').fadeTo(1000, 1.0);
 
@@ -66,7 +66,21 @@ $('#pic').hide();
   $('#pic2').hide();
 
   $('#pic').fadeTo(1000, 1.0);
+});*/
+
+$("#pic2").hover(function(){
+
+  }, function(){
+  $('#pic2').hide();
+
+  $('#pic').fadeTo(1000, 1.0);
 });
+$("#pic").hover(function(){
+$('#pic').hide();
+  $('#pic2').fadeTo(1000, 1.0);
+
+  }
+);
 $(document).ready(function(){
 
 $('#pic').hide();
