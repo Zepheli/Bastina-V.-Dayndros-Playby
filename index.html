@@ -2,54 +2,83 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Sail&display=swap" rel="stylesheet">
 
 
-<body style="background-image:url('https://cdn.discordapp.com/attachments/973976880904560670/977909685883658300/unknown.png'); background-repeat: no-repeat; background-size: cover !important; margin:0;">
+<body style="background-color:#000000; background-repeat: no-repeat; background-size: cover !important; margin:0;">
+
+<div id="dpic1" style="width:50%;">
+<img id="pic" align=left src=https://cdn.discordapp.com/attachments/973976880904560670/981472995488968714/unknown_preview_rev_1_7.png width=auto height=100% style="margin-left:-200px;transition: 5s;border-right: 5px solid #ffd700;">
+
+<img id="pic2" align=left src=https://media.discordapp.net/attachments/973976880904560670/981490936175525928/unknown.png? width=97% height=auto style="transition: 5s;">
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 
-
-<div class="center" style="display: flex;
-  justify-content: center;
-  height:80%;
-  width:auto"
-     >
-<img id="pic" align=right src=https://i.postimg.cc/DzV1Rpwb/Bastinadv-Framed.png width=auto height=auto >
-  </div>
-
+<br>
+<br>
+<br>
+<div  style="width:50%; float: right;">
 <center>
-<font color="#000000" style="font-family: 'Pinyon Script', cursive;font-size:80px;"><b>Bastina V. Dayndros</b></font>
- <br>
+<p id="text" style="margin-bottom:100%;transition: 5s;"></p>
 
- 
+<div style="background-image:url('https://i.postimg.cc/pXMcXM3N/symbol1-1.png'); background-repeat: no-repeat; background-size: contain;
+    background-position-x: center;">
+
+<font color="#ffd700" size=7 style="font-family: 'Pinyon Script', cursive;font-size:60px;"><b>Bastina V. Dayndros</b></font>
 <br>
-
-
-
 <br>
+<br>
+<br>
+<br>
+<font color="#ffd700" face='verdana' style="font-family: 'Sail', cursive;font-size:20px;">
+"There is never enough time to do everything."
+<br>
+"But there is always enough time to do the important thing."
+<br>
+"Be Free." 
+</font>
+
+</div>
+
 
 </center>
+</div>
 
-
-<audio controls loop autoplay style="display:none;">
-  <source src="videoplayback1.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+<iframe width=0 height=0 src=https://www.youtube.com/embed/rJeAcRGybLI?autoplay=1 title=YouTube video player frameborder=0 allow=accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture allowfullscreen></iframe>
 
 
 <script>
-
-$(document).ready(function(){
- //$('img').fadeout();
- /*$('img').hide();
-$('img').fadeIn(3000);
-$('font').hide();
-$('font').fadeTo(3000, 1.0);*/
+$("#dpic1").hover(function(){
 $('#pic').hide();
-$('font').hide();
-;
-$('#pic').fadeTo(5000, 1.0);
+  $('#pic2').fadeTo(1000, 1.0);
 
-$('font').fadeTo(5000, 1.0);
+  }, function(){
+  $('#pic2').hide();
+
+  $('#pic').fadeTo(1000, 1.0);
+});
+$(document).ready(function(){
+
+$('#pic').hide();
+$('#pic2').hide();
+$('#text').hide();
+$('font').hide();
+$('#pic').animate({"margin-left": '+=200'}, 1000);
+$('#pic').fadeTo(3000, 1.0);
+$('#text').animate({"margin-bottom": '-=100%'}, 1000);
+$('#text').fadeTo(3000, 1.0);
+
+$('font').fadeTo(3000, 1.0);
 
 
 });
